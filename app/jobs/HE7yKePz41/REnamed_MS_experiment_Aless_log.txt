@@ -1,0 +1,7 @@
+10/14/2020 12:20:36 PM - INFO - start script: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/PPUMA/pyModules/Table.py -i /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/REnamed_MS_experiment_Aless.xlsx -c /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/rowMerger.ini -od /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41
+10/14/2020 12:20:36 PM - INFO - Reading input file: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/REnamed_MS_experiment_Aless.xlsx
+10/14/2020 12:20:36 PM - INFO - /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/REnamed_MS_experiment_Aless.xlsx was read
+10/14/2020 12:20:36 PM - INFO - Start collapsing table
+10/14/2020 12:20:36 PM - INFO - End collapsing table
+10/14/2020 12:20:36 PM - INFO - Write Output Table: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/rowMerged_MS_experiment_Aless.xlsx
+10/14/2020 12:20:36 PM - INFO - end script

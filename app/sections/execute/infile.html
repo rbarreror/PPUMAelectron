@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input File</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 95%;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(../../assets/images/dark-background.jpg);
+            background-size: cover;
+            position: relative;
+            height: 95%;
+        }
+
+        /* HEADER */
+        #header{
+            color: #ffffff; 
+            font-family: 'Lato', sans-serif; 
+            text-align: center;
+            margin-top: 3%;
+            user-select: none;
+        }
+
+        #title { 
+            font-size: 90px; 
+            font-weight: 300; 
+            padding: 0;
+        }
+
+        #subtitle {
+            font-size: 20px; 
+            font-weight: 300; 
+            margin-top: 1%;
+        }
+
+        /* MAIN CONTENT */
+        #container h3 {
+            margin-top: 7%;
+            text-align: center;
+            color:white; 
+            font-size: 1.5em; 
+            font-weight: 300; 
+            font-family: Arial;
+        }
+
+        #file {
+            margin-top: 5%;
+            text-align: center;
+        }
+
+        #file input {
+            color: lightgray;
+        }
+
+        /* NEXT - PREVIOUS */
+        #previousContainer {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        #nextContainer {
+            margin-top: 8%;
+        }
+
+        #nextContainer a {
+            width: 10%;
+        }
+
+        .change {
+            display: inline-block;
+
+            border: 1px solid lightgray;
+            border-radius: 50px;
+            
+            background-color: transparent;
+            color: white;
+            font-family: Arial;
+            font-weight: 300;
+            font-size: 1.2em;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+
+            transition: background-color 1s;
+        }
+
+        .previous {
+            padding: 8px 16px;
+        }
+
+        .next {
+            padding: 8px 0px;
+            padding-left: 16px;
+            padding-right: 26px;
+        }
+
+        .change:hover {
+            background-color: lightgray;
+            color: black;
+        }
+
+        #reload {
+            display: inline-block;
+            padding-top: 10px;
+            margin-right: 20px;
+            font-size: 20px;
+            color:lightgray;
+            text-align: center;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        /* FOOTER */
+        #footer {
+            position: absolute;
+            bottom: 0px;
+            left: 15%;
+            padding: 0;
+            width: 70%;
+            text-align: center;
+            color: lightgray;
+            font-family: Arial;
+            font-size: 0.8em;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        #footer p {
+            padding: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div id="previousContainer">
+        <a class="change previous" href="./moduleSelector.html">&laquo;</a>
+    </div>
+
+    <div id="header">
+        <div id="title">
+            <span>PPuMA</span>
+        </div>
+        <div id="subtitle">
+            <span>Processing of Putative Annotations for Metabolomic Analysis</span>
+        </div>
+    </div>
+
+    <div id="container">
+        <h3>Upload Input File</h3>
+        <div id="file">
+            <input type="file" id="infile" name="name">
+        </div>
+    </div>
+
+    <div id="nextContainer">
+        <div id="selectBtn" style="visibility: hidden; width:100px; margin: auto; padding: 0px; text-align: center;">
+            <a class="change next" onclick="next()">&raquo;</a>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div id="footText">
+            <p>Spanish National Center for Cardiovascular Research</p>
+            <p>Cardiovascular Proteomics Laboratory</p>
+            <p>C/ Melchor Fernández Almagro, 3. 28029 Madrid</p>
+        </div>
+    </div>
+
+    <script>
+        // Global variables
+        const { ipcRenderer } = require('electron');
+        var workflow;
+        
+        // Add event: Show next when uploading file
+        const infileElem = document.getElementById("infile");
+        infileElem.addEventListener("change", () => {
+            // Add infile information to workflow object
+            fileElemObj = document.getElementById('infile').files[0];
+            workflow.files.infile.name = fileElemObj.name
+            workflow.files.infile.path = fileElemObj.path            
+
+            // Show next button
+            document.getElementById("selectBtn").style.visibility = "visible"
+        })
+
+        // Move to next window
+        function next() {
+            // Send workflow object to main
+            ipcRenderer.send('select-modules', workflow);
+        }
+
+        // Handle events
+        ipcRenderer.on('send-workflow', (e, receivedWorkflow) => {
+            // Save received workflow and add one to next attribute
+            workflow = receivedWorkflow;
+            workflow.next += 1;
+            console.log(workflow);
+        })
+    </script>
+    
+</body>
+</html>

@@ -1,0 +1,5 @@
+10/14/2020 12:20:37 PM - INFO - start script: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/PPUMA/pyModules/FeatureInfo.py -id /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/rowMerged_MS_experiment_Aless.xlsx -c /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/tableMerger.ini -if /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/FeatureInfo.xlsx -od /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41
+10/14/2020 12:20:37 PM - INFO - Reading input file: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/FeatureInfo.xlsx
+10/14/2020 12:20:37 PM - INFO - Reading input file: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/rowMerged_MS_experiment_Aless.xlsx
+10/14/2020 12:20:37 PM - INFO - Write Output Table: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/tableMerged_MS_experiment_Aless.xlsx
+10/14/2020 12:20:37 PM - INFO - end script

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running workflow</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            height: 95%;
+        }
+
+        body {
+            background-color: black;
+            background-image: url(../../assets/images/dark-background.jpg);
+            background-size: cover;
+            position: relative;
+            height: 95%;            
+        }
+
+        /* HEADER */
+        #header{
+            color: #ffffff; 
+            font-family: 'Lato', sans-serif; 
+            text-align: center;
+            margin-top: 3%;
+            user-select: none;
+        }
+
+        #title { 
+            font-size: 90px; 
+            font-weight: 300; 
+            padding: 0;
+        }
+
+        #subtitle {
+            font-size: 20px; 
+            font-weight: 300; 
+            margin-top: 1%;
+        }
+
+        /* MAIN CONTENT */
+        #container h3 {
+            margin-top: 7%;
+            text-align: center;
+            color:white; 
+            font-size: 1.5em; 
+            font-weight: 300; 
+            font-family: Arial;
+        }
+
+        #loader {
+            margin: auto;
+            border: 16px solid #f3f3f3;
+            border-radius: 50%;
+            border-top: 16px solid darkred;
+            width: 120px;
+            height: 120px;
+            animation: spin 2s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        /* FOOTER */
+        #footer {
+            position: absolute;
+            bottom: 0px;
+            left: 15%;
+            padding: 0;
+            width: 70%;
+            text-align: center;
+            color: lightgray;
+            font-family: Arial;
+            font-size: 0.8em;
+        }
+
+        #footer a {
+            text-decoration: none;
+            color: lightgray;
+        }
+
+        #footer p {
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="header">
+        <div id="title">
+            <span>PPuMA</span>
+        </div>
+        <div id="subtitle">
+            <span>Processing of Putative Annotations for Metabolomic Analysis</span>
+        </div>
+    </div>
+
+    <div id="container">
+        <h3>Running workflow</h3>
+        <div id="loader"></div>
+    </div>
+
+    <div id="footer">
+        <div id="footText">
+            <p>Spanish National Center for Cardiovascular Research</p>
+            <p>Cardiovascular Proteomics Laboratory</p>
+            <p>C/ Melchor Fernández Almagro, 3. 28029 Madrid</p>
+        </div>
+    </div>
+    
+</body>
+</html>

@@ -1,0 +1,9 @@
+10/14/2020 01:02:44 PM - INFO - start script: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/PPUMA/pyModules/Tagger.py -i /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0/MS_experiment.xls -c /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0/Tagger.ini -od /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0
+10/14/2020 01:02:44 PM - INFO - Using 1 cores
+10/14/2020 01:02:44 PM - INFO - Reading input file: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0/MS_experiment.xls
+10/14/2020 01:02:45 PM - INFO - /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0/MS_experiment.xls was read
+10/14/2020 01:02:45 PM - INFO - Start halogenated compounds tagging
+10/14/2020 01:02:45 PM - INFO - Tagging halogenated compounds
+10/14/2020 01:02:45 PM - INFO - Finished halogenated compounds tagging
+10/14/2020 01:02:50 PM - INFO - Write Output Table: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/3HCHTpgme0/tagged_MS_experiment.xls
+10/14/2020 01:02:50 PM - INFO - end script

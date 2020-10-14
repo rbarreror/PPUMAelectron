@@ -1,0 +1,14 @@
+10/14/2020 12:19:43 PM - INFO - start script: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/PPUMA/pyModules/Mod.py -i /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/tagged_MS_experiment_Aless.xlsx -pr /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/REname.ini -od /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41 -re /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/regex.ini
+10/14/2020 12:19:43 PM - INFO - Using 1 cores
+10/14/2020 12:19:43 PM - INFO - Reading input file: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/tagged_MS_experiment_Aless.xlsx
+10/14/2020 12:19:43 PM - INFO - /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/tagged_MS_experiment_Aless.xlsx was read
+10/14/2020 12:19:43 PM - INFO - Removing rows identified by RemoveRow parameter
+10/14/2020 12:19:43 PM - INFO - Synonyms substitution prior to parsing
+10/14/2020 12:19:44 PM - INFO - Parsing lipid names using Goslin
+10/14/2020 12:20:31 PM - INFO - Collapsing rows after lipid processing
+10/14/2020 12:20:34 PM - INFO - Applying regular expression from regex.ini and sorting peptide aminoacids alphabetically
+10/14/2020 12:20:34 PM - INFO - Synonyms substitution after parsing
+10/14/2020 12:20:34 PM - INFO - Collapsing rows after metabolite name parsing
+10/14/2020 12:20:35 PM - INFO - Peptides post-processing (replace alphabetically sorted name by one of the original names)
+10/14/2020 12:20:35 PM - INFO - Write Output Table: /home/rafael/CNIC/Metabolomica/Scripts/MetabolomicWorkflow/Electron/app/jobs/HE7yKePz41/REnamed_MS_experiment_Aless.xlsx
+10/14/2020 12:20:35 PM - INFO - end script
